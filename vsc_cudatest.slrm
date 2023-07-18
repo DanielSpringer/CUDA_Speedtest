@@ -16,4 +16,4 @@ nvidia-smi
 
 . /home/fs72150/springerd/XInstalls/spack/share/spack/setup-env.sh
 spack env activate -p spack_1
-julia --project /home/fs72150/springerd/Projects/CUDA_Speedtest --include_file "/home/fs72150/springerd/Projects/CUDA_Speedtest/src/cuda_speedtest.jl"
+julia --project /home/fs72150/springerd/Projects/CUDA_Speedtest/src/main.jl --include_file "/home/fs72150/springerd/Projects/CUDA_Speedtest/src/main.jl"
