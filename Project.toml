@@ -1,0 +1,4 @@
+name = "cuda_speedtest"
+uuid = "9e438b1c-9b1d-4bc3-b9dc-1c6fe0f383f3"
+authors = ["daniel springer <daniel.springer@gmx.at>"]
+version = "0.1.0"
