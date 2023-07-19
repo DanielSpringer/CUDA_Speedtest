@@ -1,0 +1,52 @@
+=================================================================
+N=1000
+CPU einsum  936.072 ms (6 allocations: 22.89 MiB)
+CPU matmul  46.608 ms (8 allocations: 30.52 MiB)
+CUDA matmul  3.984 ms (49 allocations: 22.89 MiB)
+
+CPU einsum: 0.09554004669189453
+CPU matmul: 0.029689788818359375
+GPU einsum: 8.1990065574646
+GPU matmul: 0.011501312255859375
+
+=================================================================
+N=2000
+CPU einsum  14.674 s (6 allocations: 91.55 MiB)
+CPU matmul  355.969 ms (8 allocations: 122.07 MiB)
+CUDA matmul  17.280 ms (49 allocations: 91.55 MiB)
+
+CPU einsum: 0.08759641647338867
+CPU matmul: 0.09995245933532715
+GPU einsum: 6.035232067108154
+GPU matmul: 0.04477953910827637
+
+=================================================================
+N=5000
+CPU matmul  5.536 s (8 allocations: 762.94 MiB)
+CUDA matmul  140.922 ms (49 allocations: 572.21 MiB)
+
+CPU einsum: 0.8071653842926025
+CPU matmul: 0.720527172088623
+GPU einsum: 7.96097993850708
+GPU matmul: 0.261580228805542
+
+=================================================================
+N=10000
+CPU matmul  42.774 s (8 allocations: 2.98 GiB)
+CUDA matmul  3.164 s (100 allocations: 2.24 GiB)
+
+CPU einsum: 3.368501901626587
+CPU matmul: 3.2221012115478516
+GPU einsum: 7.189100027084351
+GPU matmul: 1.0411572456359863
+
+=================================================================
+N=50000
+
+
+CPU einsum: 303.54503655433655
+CPU matmul: 286.8757276535034
+GPU einsum: 32.89941334724426
+GPU matmul: 26.240554809570312
+
+

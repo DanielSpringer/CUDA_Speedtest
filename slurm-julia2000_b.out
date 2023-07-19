@@ -1,4 +1,4 @@
-Tue Jul 18 14:17:33 2023       
+Tue Jul 18 17:45:22 2023       
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 510.39.01    Driver Version: 510.39.01    CUDA Version: 11.6     |
 |-------------------------------+----------------------+----------------------+
@@ -7,11 +7,11 @@ Tue Jul 18 14:17:33 2023
 |                               |                      |               MIG M. |
 |===============================+======================+======================|
 |   0  NVIDIA A40          Off  | 00000000:41:00.0 Off |                    0 |
-|  0%   32C    P0    73W / 300W |      0MiB / 46068MiB |      0%      Default |
+|  0%   32C    P0    76W / 300W |      0MiB / 46068MiB |      0%      Default |
 |                               |                      |                  N/A |
 +-------------------------------+----------------------+----------------------+
 |   1  NVIDIA A40          Off  | 00000000:A1:00.0 Off |                    0 |
-|  0%   32C    P0    73W / 300W |      0MiB / 46068MiB |      3%      Default |
+|  0%   28C    P0    67W / 300W |      0MiB / 46068MiB |      3%      Default |
 |                               |                      |                  N/A |
 +-------------------------------+----------------------+----------------------+
                                                                                
@@ -31,14 +31,8 @@ Tue Jul 18 14:17:33 2023
   No Changes to `~/Projects/CUDA_Speedtest/Project.toml`
   No Changes to `~/Projects/CUDA_Speedtest/Manifest.toml`
    Resolving package versions...
-    Updating `~/Projects/CUDA_Speedtest/Project.toml`
-  [6e4b80f9] + BenchmarkTools v1.3.2
-    Updating `~/Projects/CUDA_Speedtest/Manifest.toml`
-  [6e4b80f9] + BenchmarkTools v1.3.2
-  [682c06a0] + JSON v0.21.4
-  [69de0a69] + Parsers v2.7.1
-  [a63ad114] + Mmap
-  [9abbd945] + Profile
+  No Changes to `~/Projects/CUDA_Speedtest/Project.toml`
+  No Changes to `~/Projects/CUDA_Speedtest/Manifest.toml`
 **************************************** 
 true
 CUDA runtime 11.8, artifact installation
@@ -73,6 +67,6 @@ nothing
 ***************************************** 
 ***************************************** 
 ***************************************** 
-  32.567 s (4000014 allocations: 907.90 MiB)
-  7.727 ms (49 allocations: 22.89 MiB)
-  7.120 ms (6 allocations: 22.89 MiB)
+CPU einsum  14.674 s (6 allocations: 91.55 MiB)
+CPU matmul  355.969 ms (8 allocations: 122.07 MiB)
+CUDA matmul  17.280 ms (49 allocations: 91.55 MiB)

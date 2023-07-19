@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+#SBATCH -J sq_1_sbe
+#SBATCH -N 1
+#SBATCH --mail-type=BEGIN    # first have to state the type of event to occur 
+#SBATCH --mail-user=<email@address.at>   # and then your email address
+
+#SBATCH --partition=zen2_0256_a40x2
+#SBATCH --qos zen2_0256_a40x2
+#SBATCH --gres=gpu:2                   #or --gres=gpu:1 if you only want to use half a node
+#SBATCH --time=00:30:00
+
+
+FILES=(/home/fs72150/dspringer/XInstalls/anaconda3/*)
+source /home/fs72150/springerd/XInstalls/anaconda3/bin/activate
+conda init bash
+#source ~/.bashrc
+conda activate conda_1
+
+# when srun is used, you need to set:
+python /home/fs72150/springerd/Projects/CUDA_Speedtest/src/main.py
+
+
+
+#module purge
+#module load cuda/9.1.85 
+#nvidia-smi
+#
+#python /home/fs72150/springerd/Projects/SingleBoson/SBE_v1/test.py

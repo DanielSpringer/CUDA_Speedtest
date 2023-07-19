@@ -1,0 +1,71 @@
+Tue Jul 18 16:57:57 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 510.39.01    Driver Version: 510.39.01    CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          Off  | 00000000:41:00.0 Off |                    0 |
+|  0%   32C    P0    74W / 300W |      0MiB / 46068MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40          Off  | 00000000:A1:00.0 Off |                    0 |
+|  0%   32C    P0    72W / 300W |      0MiB / 46068MiB |      3%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+    Updating registry at `~/.julia/registries/General.toml`
+   Resolving package versions...
+  No Changes to `~/Projects/CUDA_Speedtest/Project.toml`
+  No Changes to `~/Projects/CUDA_Speedtest/Manifest.toml`
+  Activating project at `~/Projects/CUDA_Speedtest`
+   Resolving package versions...
+  No Changes to `~/Projects/CUDA_Speedtest/Project.toml`
+  No Changes to `~/Projects/CUDA_Speedtest/Manifest.toml`
+   Resolving package versions...
+  No Changes to `~/Projects/CUDA_Speedtest/Project.toml`
+  No Changes to `~/Projects/CUDA_Speedtest/Manifest.toml`
+**************************************** 
+true
+CUDA runtime 11.8, artifact installation
+CUDA driver 11.6
+NVIDIA driver 510.39.1
+
+CUDA libraries: 
+- CUBLAS: 11.11.3
+- CURAND: 10.3.0
+- CUFFT: 10.9.0
+- CUSOLVER: 11.4.1
+- CUSPARSE: 11.7.5
+- CUPTI: 18.0.0
+- NVML: 11.0.0+510.39.1
+
+Julia packages: 
+- CUDA.jl: 4.4.0
+- CUDA_Driver_jll: 0.5.0+1
+- CUDA_Runtime_jll: 0.6.0+0
+- CUDA_Runtime_Discovery: 0.2.2
+
+Toolchain:
+- Julia: 1.8.2
+- LLVM: 13.0.1
+- PTX ISA support: 3.2, 4.0, 4.1, 4.2, 4.3, 5.0, 6.0, 6.1, 6.3, 6.4, 6.5, 7.0, 7.1, 7.2
+- Device capability support: sm_35, sm_37, sm_50, sm_52, sm_53, sm_60, sm_61, sm_62, sm_70, sm_72, sm_75, sm_80, sm_86
+
+2 devices:
+  0: NVIDIA A40 (sm_86, 44.367 GiB / 44.988 GiB available)
+  1: NVIDIA A40 (sm_86, 44.367 GiB / 44.988 GiB available)
+nothing
+***************************************** 
+***************************************** 
+***************************************** 
+CPU einsum  23.685 s (6 allocations: 91.55 MiB)
+CUDA matmul  46.582 ms (49 allocations: 91.55 MiB)

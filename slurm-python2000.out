@@ -1,0 +1,18 @@
+no change     /home/fs72150/springerd/XInstalls/anaconda3/condabin/conda
+no change     /home/fs72150/springerd/XInstalls/anaconda3/bin/conda
+no change     /home/fs72150/springerd/XInstalls/anaconda3/bin/conda-env
+no change     /home/fs72150/springerd/XInstalls/anaconda3/bin/activate
+no change     /home/fs72150/springerd/XInstalls/anaconda3/bin/deactivate
+no change     /home/fs72150/springerd/XInstalls/anaconda3/etc/profile.d/conda.sh
+no change     /home/fs72150/springerd/XInstalls/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/fs72150/springerd/XInstalls/anaconda3/shell/condabin/Conda.psm1
+no change     /home/fs72150/springerd/XInstalls/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/fs72150/springerd/XInstalls/anaconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /home/fs72150/springerd/XInstalls/anaconda3/etc/profile.d/conda.csh
+no change     /home/fs72150/springerd/.bashrc
+No action taken.
+CPU einsum: 0.08759641647338867
+CPU matmul: 0.09995245933532715
+GPU einsum: 6.035232067108154
+GPU matmul: 0.04477953910827637
+Done
