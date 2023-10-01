@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#SBATCH -J sq_1_sbe
+#SBATCH -N 1
+#SBATCH --mail-type=BEGIN    # first have to state the type of event to occur 
+#SBATCH --mail-user=<email@address.at>   # and then your email address
+
+#SBATCH --partition=zen3_0512_a100x2
+#SBATCH --qos zen3_0512_a100x2
+#SBATCH --gres=gpu:2                   #or --gres=gpu:1 if you only want to use half a node
+#SBATCH --time=02:00:00
+
+module purge
+# module load cuda/9.1.85 
+nvidia-smi
+
+. /home/fs72150/springerd/XInstalls/spack/share/spack/setup-env.sh
+spack env activate -p spack_1
+julia --project /home/fs72150/springerd/Projects/CUDA_Speedtest/src/test_inv.jl --include_file "/home/fs72150/springerd/Projects/CUDA_Speedtest/src/test_inv.jl"
